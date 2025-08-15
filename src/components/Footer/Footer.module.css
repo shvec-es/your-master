@@ -1,0 +1,56 @@
+.footerSection {
+  color: var(--almost-blue);
+  background-color: var(--gray);
+  border-top: 1px solid #42464b;
+}
+
+.footerFirst {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 40px;
+}
+
+.footerLogo {
+  color: var(--background);
+  transition:
+    transform var(--animate),
+    color var(--animate);
+}
+.footerLogo:hover,
+.footerLogo:focus {
+  transform: scale(1.2);
+  color: var(--background);
+}
+
+.footerNavLink {
+  transition: color var(--animate);
+}
+
+.footerNavLink:hover,
+.footerNavLink:focus {
+  color: var(--background);
+}
+
+.footerFindUs {
+  margin-bottom: 16px;
+}
+
+.footerNavList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footerFirst {
+    flex-direction: row;
+    gap: 32px;
+    justify-content: space-between;
+    /* align-items: center; */
+  }
+
+  .footerCopywrite {
+    text-align: right;
+  }
+}

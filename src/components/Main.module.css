@@ -1,0 +1,46 @@
+/* base styles */
+.section {
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.mainTitle {
+  font-size: 24px;
+  color: var(--title-text);
+  margin-bottom: 8px;
+}
+
+.accentColor {
+  color: var(--accent-color);
+}
+
+@media only screen and (min-width: 768px) {
+  .mainTitle {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .section {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+
+  .mainTitle {
+    font-size: 36px;
+    margin-bottom: 12px;
+  }
+}
+
+/* Flex Wrapper */
+.flexWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Not Found Page */
+.notFoundSection {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}

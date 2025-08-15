@@ -1,0 +1,38 @@
+.orderBtn {
+  background-color: var(--accent-color);
+  display: block;
+  padding: 10px;
+  width: 160px;
+  margin-left: auto;
+
+  border: 1px solid;
+  overflow: hidden;
+  position: relative;
+}
+
+.orderBtn:after {
+  background: #fff;
+  content: '';
+  height: 155px;
+  left: -75px;
+  opacity: 0.2;
+  position: absolute;
+  top: -50px;
+  transform: rotate(35deg);
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  width: 50px;
+}
+
+.orderBtn:hover:after {
+  left: 120%;
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+@media only screen and (min-width: 1280px) {
+  .orderBtn {
+    width: 200px;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+}

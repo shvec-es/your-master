@@ -1,0 +1,69 @@
+.benefits {
+  background-image:
+    linear-gradient(to right, rgba(18, 18, 18, 0.9), rgba(18, 18, 18, 0.9)),
+    url('/images/features_tablet.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--background);
+  padding-top: 24px;
+  padding-bottom: 50px;
+}
+
+.benefitsTitle {
+  color: var(--background);
+}
+
+.benefitsList {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  text-align: center;
+}
+
+.benefitsSubtitle {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.benefitsDescr {
+  font-weight: 500;
+}
+
+@media only screen and (min-width: 768px) {
+  .benefitsList {
+    flex-wrap: wrap;
+    flex-direction: row;
+    column-gap: 28px;
+    justify-content: center;
+  }
+
+  .benefitsItem {
+    width: 330px;
+  }
+
+  .benefitsSubtitle {
+    /* text-align: left; */
+  }
+
+  .benefitsDescr {
+    /* font-weight: 600; */
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .benefits {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+
+  .benefitsSubtitle {
+    /* font-size: 32px; */
+    margin-bottom: 12px;
+  }
+  .benefitsDescr {
+    font-weight: 600;
+    /* font-size: 20px; */
+  }
+}

@@ -1,0 +1,244 @@
+.servises {
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.servisesDescr {
+  color: var(--almost-blue);
+  font-style: italic;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.servisesList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.servisesItem {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  padding: 10px;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background-color: var(--almost-blue);
+}
+
+.firstServise {
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(147, 138, 61, 0.8),
+      rgba(147, 138, 61, 0.8)
+    ),
+    url('/images/servises/bud_works.webp');
+}
+
+.firstServise .servisesOverlay {
+  background-color: rgb(147, 138, 61);
+}
+
+.secondServise {
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(167, 129, 181, 0.8),
+      rgba(167, 129, 181, 0.8)
+    ),
+    url('/images/servises/ozd_works.webp');
+}
+
+.secondServise .servisesOverlay {
+  background-color: rgb(167, 129, 181);
+}
+
+.thirdServise {
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(231, 107, 107, 0.8),
+      rgba(231, 107, 107, 0.8)
+    ),
+    url('/images/servises/home_master.webp');
+}
+
+.thirdServise .servisesOverlay {
+  background-color: rgb(231, 107, 107);
+}
+
+.fourthServise {
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(123, 150, 89, 0.8),
+      rgba(123, 150, 89, 0.8)
+    ),
+    url('/images/servises/ogorod.webp');
+}
+
+.fourthServise .servisesOverlay {
+  background-color: rgb(123, 150, 89);
+}
+
+.fifthServise {
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(55, 155, 177, 0.8),
+      rgba(55, 155, 177, 0.8)
+    ),
+    url('/images/pobutovy.webp');
+}
+
+.fifthServise .servisesOverlay {
+  background-color: rgb(55, 155, 177);
+}
+
+.sixthServise {
+  background-image:
+    linear-gradient(to bottom, rgba(109, 78, 49, 0.8), rgba(109, 78, 49, 0.8)),
+    url('/images/pobutovy.webp');
+}
+
+.sixthServise .servisestOverlay {
+  background-color: rgb(109, 78, 49);
+}
+
+.servisesSubtitle {
+  text-transform: uppercase;
+  color: var(--background);
+  font-size: 20px;
+}
+
+.servisesSubdescr {
+  color: var(--background);
+  font-style: italic;
+}
+
+.servisesOverlay {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+
+  padding: 10px;
+
+  transition: opacity 250ms ease-in-out;
+}
+
+.servisesListOverlay {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+
+  color: var(--background);
+}
+
+.servisesItem:hover .servisesOverlay {
+  opacity: 1;
+}
+
+.forDetails {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  text-decoration: underline;
+  color: var(--background);
+  font-weight: 500;
+}
+
+@media only screen and (min-width: 768px) {
+  .servisesDescr {
+    font-size: 18px;
+  }
+
+  .servisesList {
+    justify-content: start;
+  }
+
+  .servisesItem {
+    width: 338px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .servises {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+
+  .servisesDescr {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .servisesList {
+    gap: 40px;
+  }
+
+  .servisesItem {
+    width: calc((100% - 80px) / 2);
+    padding: 20px;
+    min-height: 350px;
+  }
+
+  .firstServise {
+    background-image:
+      linear-gradient(
+        to bottom,
+        rgba(147, 138, 61, 0.8),
+        rgba(147, 138, 61, 0.8)
+      ),
+      url('/images/servises/bud_works_desktop.webp');
+  }
+
+  .secondServise {
+    background-image:
+      linear-gradient(
+        to bottom,
+        rgba(167, 129, 181, 0.8),
+        rgba(167, 129, 181, 0.8)
+      ),
+      url('/images/servises/ozd_works_desktop.webp');
+  }
+
+  .thirdServise {
+    background-image:
+      linear-gradient(
+        to bottom,
+        rgba(231, 107, 107, 0.8),
+        rgba(231, 107, 107, 0.8)
+      ),
+      url('/images/servises/home_master_desktop.webp');
+  }
+
+  .fourthServise {
+    background-image:
+      linear-gradient(
+        to bottom,
+        rgba(123, 150, 89, 0.8),
+        rgba(123, 150, 89, 0.8)
+      ),
+      url('/images/servises/ogorod_desktop.webp');
+  }
+
+  .forDetails {
+    font-weight: 500;
+    font-size: 20px;
+  }
+}
