@@ -2,14 +2,10 @@
 import { useId } from 'react';
 import { Form, Formik, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
-import Swal from 'sweetalert2';
 import s from './OrderForm.module.css';
 import axios from 'axios';
-
-const swalOptions = {
-  theme: 'dark',
-  timer: 2000,
-};
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
 
 const validatePhone = (phone) => {
   return phone
@@ -41,10 +37,10 @@ export default function OrderForm() {
 
     try {
       axios.post('api/send-message', { text: message });
-      Swal.fire({
-        ...swalOptions,
+      iziToast.success({
         title: 'Ваш запит відправлено🤩',
-        text: ' Ми скоро вам передзвонимо, очікуйте!',
+        message: ' Ми скоро вам передзвонимо, очікуйте!',
+        backgroundColor: '#f39c12',
       });
     } catch (error) {
       console.log(error);

@@ -11,7 +11,7 @@ export default function Social() {
       <li className={s.socListItem}>
         <Link
           className={s.socListLink}
-          href="https://www.instagram.com/"
+          href="https://www.instagram.com/santyago_fireman"
           target="_blank"
         >
           <IoLogoInstagram
@@ -28,7 +28,7 @@ export default function Social() {
       <li className={s.socListItem}>
         <Link
           className={s.socListLink}
-          href="https://telegram.org/"
+          href="http://t.me/Cantiyago"
           target="_blank"
         >
           <RiTelegramLine
@@ -45,7 +45,7 @@ export default function Social() {
       <li className={s.socListItem}>
         <Link
           className={s.socListLink}
-          href="https://www.viber.com/ua/"
+          href="viber://chat?number=%2B380689585480"
           target="_blank"
         >
           <FaViber
