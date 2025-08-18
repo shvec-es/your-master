@@ -35,8 +35,9 @@ export default function Reviews() {
               src="/images/reviews/review1.webp"
               width={320}
               height={200}
-              alt="rexiew"
+              alt="review"
               className=""
+              style={{ width: '100%' }}
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -44,8 +45,9 @@ export default function Reviews() {
               src="/images/reviews/review2.webp"
               width={320}
               height={200}
-              alt="rexiew"
+              alt="review"
               className=""
+              style={{ width: '100%' }}
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -53,8 +55,19 @@ export default function Reviews() {
               src="/images/reviews/review3.webp"
               width={320}
               height={200}
-              alt="rexiew"
+              alt="review"
               className=""
+              style={{ width: '100%' }}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image
+              src="/images/reviews/review4.webp"
+              width={320}
+              height={200}
+              alt="review"
+              className=""
+              style={{ width: '100%' }}
             />
           </SwiperSlide>
         </Swiper>

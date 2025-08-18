@@ -7,20 +7,22 @@ const raleway = Raleway({
   subsets: ['latin'],
 });
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  themeColor: '#e74c3c',
+};
+
 export const metadata = {
+  metadataBase: new URL('https://your-master.org'),
   title: 'Your Master',
   description:
     'Наші фахівці допоможуть з будь-яким завданням: від встановлення полички до ремонтих робіт на подвірʼї чи вдома.',
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-  },
-  themeColor: '#e74c3c',
   openGraph: {
     title: 'Your Master',
     description:
       'Наші фахівці допоможуть з будь-яким завданням: від встановлення полички до ремонтих робіт на подвірʼї чи вдома.',
-    url: 'https://yourmaster.com', // після деплоя
+    url: 'https://your-master.org',
     siteName: 'Your Master',
     images: [
       {

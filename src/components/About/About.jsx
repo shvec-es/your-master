@@ -14,6 +14,7 @@ export default function About() {
             height={420}
             alt="about-image"
             className={s.aboutImg}
+            style={{ height: 'auto' }}
           />
         </div>
         <div className={s.aboutTextContainer}>

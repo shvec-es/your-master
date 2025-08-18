@@ -4,8 +4,7 @@ import { Form, Formik, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import s from './OrderForm.module.css';
 import axios from 'axios';
-import iziToast from 'izitoast';
-import 'izitoast/dist/css/iziToast.min.css';
+import { toast, ToastContainer } from 'react-toastify';
 
 const validatePhone = (phone) => {
   return phone
@@ -37,11 +36,18 @@ export default function OrderForm() {
 
     try {
       axios.post('api/send-message', { text: message });
-      iziToast.success({
-        title: 'Ваш запит відправлено🤩',
-        message: ' Ми скоро вам передзвонимо, очікуйте!',
-        backgroundColor: '#f39c12',
+      toast('Ваш запит відправлено🤩 Ми скоро вам передзвонимо, очікуйте!', {
+        position: 'top-center',
+        autoClose: 3000,
+        hideProgressBar: true,
+        pauseOnHover: true,
+        theme: 'dark',
       });
+      // iziToast.success({
+      //   title: 'Ваш запит відправлено🤩',
+      //   message: ' Ми скоро вам передзвонимо, очікуйте!',
+      //   backgroundColor: '#f39c12',
+      // });
     } catch (error) {
       console.log(error);
     }
@@ -54,6 +60,7 @@ export default function OrderForm() {
       validationSchema={OrderFormSchema}
     >
       <Form>
+        <ToastContainer />
         <div className={s.orderInputWrapper}>
           <label className={s.orderFormLabel} htmlFor={`${fieldId}-name`}>
             Ваше імʼя*

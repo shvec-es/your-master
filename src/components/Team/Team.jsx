@@ -16,6 +16,7 @@ export default function Team() {
               height={240}
               alt="avatar"
               className={s.teamPhoto}
+              style={{ height: 'auto' }}
             />
             <div className={s.teamItemDescr}>
               <h3 className={s.teamName}>Олександр Швець</h3>
@@ -29,6 +30,7 @@ export default function Team() {
               height={240}
               alt="avatar"
               className={s.teamPhoto}
+              style={{ height: 'auto' }}
             />
             <div className={s.teamItemDescr}>
               <h3 className={s.teamName}>Едуард Швець</h3>
@@ -42,6 +44,7 @@ export default function Team() {
               height={240}
               alt="avatar"
               className={s.teamPhoto}
+              style={{ height: 'auto' }}
             />
             <div className={s.teamItemDescr}>
               <h3 className={s.teamName}>Іван Клепцов</h3>
