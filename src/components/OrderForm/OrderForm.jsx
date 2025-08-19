@@ -43,11 +43,6 @@ export default function OrderForm() {
         pauseOnHover: true,
         theme: 'dark',
       });
-      // iziToast.success({
-      //   title: 'Ваш запит відправлено🤩',
-      //   message: ' Ми скоро вам передзвонимо, очікуйте!',
-      //   backgroundColor: '#f39c12',
-      // });
     } catch (error) {
       console.log(error);
     }
