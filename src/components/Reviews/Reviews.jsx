@@ -70,6 +70,16 @@ export default function Reviews() {
               style={{ width: '100%' }}
             />
           </SwiperSlide>
+          <SwiperSlide>
+            <Image
+              src="/images/reviews/review5.webp"
+              width={320}
+              height={200}
+              alt="review"
+              className=""
+              style={{ width: '100%' }}
+            />
+          </SwiperSlide>
         </Swiper>
       </Container>
     </section>
