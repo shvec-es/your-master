@@ -14,13 +14,12 @@ export default function Team() {
               src="/images/team/team_avatar.webp"
               width={264}
               height={240}
-              alt="avatar"
+              alt="тут буде фото майстра Олександра"
               className={s.teamPhoto}
               style={{ height: 'auto' }}
             />
             <div className={s.teamItemDescr}>
               <h3 className={s.teamName}>Олександр Швець</h3>
-              {/* <p className={s.teamPosition}>Посада</p> */}
             </div>
           </li>
           <li className={s.teamItem}>
@@ -28,13 +27,12 @@ export default function Team() {
               src="/images/team/team_avatar.webp"
               width={264}
               height={240}
-              alt="avatar"
+              alt="тут буде фото майстра Едуарда"
               className={s.teamPhoto}
               style={{ height: 'auto' }}
             />
             <div className={s.teamItemDescr}>
               <h3 className={s.teamName}>Едуард Швець</h3>
-              {/* <p className={s.teamPosition}>Посада</p> */}
             </div>
           </li>
           <li className={s.teamItem}>
@@ -42,13 +40,12 @@ export default function Team() {
               src="/images/team/team_avatar.webp"
               width={264}
               height={240}
-              alt="avatar"
+              alt="тут буде фото майстра Сергія"
               className={s.teamPhoto}
               style={{ height: 'auto' }}
             />
             <div className={s.teamItemDescr}>
-              <h3 className={s.teamName}>Іван Клепцов</h3>
-              {/* <p className={s.teamPosition}>Посада</p> */}
+              <h3 className={s.teamName}>Сергій Котов</h3>
             </div>
           </li>
         </ul>

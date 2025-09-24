@@ -12,7 +12,7 @@ export default function About() {
             src="/images/about.webp"
             width={340}
             height={420}
-            alt="about-image"
+            alt="Зображення секції о компанії"
             className={s.aboutImg}
             style={{ height: 'auto' }}
           />
@@ -40,9 +40,11 @@ export default function About() {
             міста Дніпро.
           </p>
           <p className={s.descrAbout}>
-            Не відкладайте домашні справи на потім — замовляйте послуги{' '}
-            <strong>YourMaster</strong> вже сьогодні та переконайтесь, як просто
-            може бути життя з майстрами, яким можна довіряти!
+            Якщо вам потрібен "чоловік на годину" або майстер з ремонту,
+            будівництва - це все до нас! Не відкладайте домашні справи на потім
+            — замовляйте послуги <strong>YourMaster</strong> вже сьогодні та
+            переконайтесь, як просто може бути життя з майстрами, яким можна
+            довіряти!
           </p>
         </div>
       </Container>

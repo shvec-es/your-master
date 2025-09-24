@@ -38,7 +38,11 @@ export default function Servises() {
                 <li>будівництво дрібних конструкцій;</li>
                 <li>облаштування двору від воріт до входу в будинок.</li>
               </ul>
-              <Link href="#support" className={s.forDetails}>
+              <Link
+                href="#support"
+                className={s.forDetails}
+                aria-label="Натисніть щоб дізнатись додаткову інформацію"
+              >
                 Щоб дізнатись більше
               </Link>
             </div>
@@ -60,14 +64,18 @@ export default function Servises() {
                 <li>демонтажні роботи;</li>
                 <li>зовнішнє оздоблення та фасадні роботи.</li>
               </ul>
-              <Link href="#support" className={s.forDetails}>
+              <Link
+                href="#support"
+                className={s.forDetails}
+                aria-label="Натисніть щоб дізнатись додаткову інформацію"
+              >
                 Щоб дізнатись більше
               </Link>
             </div>
           </li>
           <li className={`${s.servisesItem} ${s.thirdServise}`}>
             <h3 className={`${inter.className} ${s.servisesSubtitle}`}>
-              Домашній майстер
+              Домашній майстер - Чоловік на годину
             </h3>
             <p className={s.servisesSubdescr}>
               Допомагаємо з усім, що вимагає рук майстра
@@ -80,7 +88,11 @@ export default function Servises() {
                 <li>слюсарні, столярні роботи;</li>
                 <li>"Чоловік на годину".</li>
               </ul>
-              <Link href="#support" className={s.forDetails}>
+              <Link
+                href="#support"
+                className={s.forDetails}
+                aria-label="Натисніть щоб дізнатись додаткову інформацію"
+              >
                 Щоб дізнатись більше
               </Link>
             </div>
@@ -98,37 +110,15 @@ export default function Servises() {
                 <li>обрізка дерев та кущів;</li>
                 <li>дрібні садові конструкції (клумби, огорожі, теплиці).</li>
               </ul>
-              <Link href="#support" className={s.forDetails}>
+              <Link
+                href="#support"
+                className={s.forDetails}
+                aria-label="Натисніть щоб дізнатись додаткову інформацію"
+              >
                 Щоб дізнатись більше
               </Link>
             </div>
           </li>
-          {/* <li className={`${s.servisesItem} ${s.fifthServise}`}>
-            <h3 className={`${inter.className} ${s.servisesSubtitle}`}>
-              Побутові послуги
-            </h3>
-            <p className={s.servisesSubdescr}>
-              Підтримуємо ваш простір у порядку
-            </p>
-            <ul className={s.servisesListOverlay}>
-              <li>прибирання приміщень після ремонту;</li>
-              <li>вивезення сміття та старих речей;</li>
-              <li>допомога при переїзді.</li>
-            </ul>
-          </li>
-          <li className={`${s.servisesItem} ${s.sixthServise}`}>
-            <h3 className={`${inter.className} ${s.servisesSubtitle}`}>
-              "Чоловік на годину"
-            </h3>
-            <p className={s.servisesSubdescr}>
-              Допомога у дрібних домашніх справах
-            </p>
-            <ul className={s.servisesListOverlay}>
-              <li>заміна розеток, вимикачів, лампочок, люстр;</li>
-              <li>встановлення змішувача, прочищення зливів;</li>
-              <li>дрібні столярні роботи.</li>
-            </ul>
-          </li> */}
         </ul>
       </Container>
     </section>

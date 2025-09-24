@@ -34,32 +34,26 @@ export default function OurWorks() {
           modules={[Pagination, Navigation]}
           className="mySwiper"
         >
-          <ul className={s.workList}>
-            {works.map(({ id, small_img, big_img, alt, title, tags }) => (
-              <SwiperSlide key={id}>
-                <li className={s.workItem}>
-                  <div className={s.workImgWrapper}>
-                    <ResponsiveImage
-                      small={small_img}
-                      big={big_img}
-                      alt={alt}
-                    />
-                  </div>
-                  <div className={s.workDescriptionWrapper}>
-                    <h3 className={s.workItemTitle}>{title}</h3>
-                    <OrderButton />
-                    <ul className={s.workTagsList}>
-                      {tags.map((tag, idx) => (
-                        <li key={idx} className={s.workTagsItem}>
-                          #{tag}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </li>
-              </SwiperSlide>
-            ))}
-          </ul>
+          {works.map(({ id, small_img, big_img, alt, title, tags }) => (
+            <SwiperSlide key={id}>
+              <div className={s.workItem}>
+                <div className={s.workImgWrapper}>
+                  <ResponsiveImage small={small_img} big={big_img} alt={alt} />
+                </div>
+                <div className={s.workDescriptionWrapper}>
+                  <h3 className={s.workItemTitle}>{title}</h3>
+                  <OrderButton />
+                  <ul className={s.workTagsList}>
+                    {tags.map((tag, idx) => (
+                      <li key={idx} className={s.workTagsItem}>
+                        #{tag}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
         </Swiper>
       </Container>
     </section>

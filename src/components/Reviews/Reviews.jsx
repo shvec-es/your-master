@@ -35,7 +35,7 @@ export default function Reviews() {
               src="/images/reviews/review1.webp"
               width={320}
               height={200}
-              alt="review"
+              alt="Відгук по бетонним роботам, заливка площадки"
               className=""
               style={{ width: '100%' }}
             />
@@ -45,7 +45,7 @@ export default function Reviews() {
               src="/images/reviews/review2.webp"
               width={320}
               height={200}
-              alt="review"
+              alt="Відгук по бетонним роботам на дворі"
               className=""
               style={{ width: '100%' }}
             />
@@ -55,7 +55,7 @@ export default function Reviews() {
               src="/images/reviews/review3.webp"
               width={320}
               height={200}
-              alt="review"
+              alt="Відгук по зварювальним роботам, встановлення навісного замка"
               className=""
               style={{ width: '100%' }}
             />
@@ -65,7 +65,7 @@ export default function Reviews() {
               src="/images/reviews/review4.webp"
               width={320}
               height={200}
-              alt="review"
+              alt="Відгук чоловік на годину"
               className=""
               style={{ width: '100%' }}
             />
@@ -75,7 +75,17 @@ export default function Reviews() {
               src="/images/reviews/review5.webp"
               width={320}
               height={200}
-              alt="review"
+              alt="Відгук поклейка шпалер"
+              className=""
+              style={{ width: '100%' }}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image
+              src="/images/reviews/review6.webp"
+              width={320}
+              height={200}
+              alt="Відгук кріплення шведської стінки"
               className=""
               style={{ width: '100%' }}
             />

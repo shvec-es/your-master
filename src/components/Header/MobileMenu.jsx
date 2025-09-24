@@ -5,7 +5,11 @@ import Social from '../Social/Social';
 export default function MobileMenu({ toggleMenu }) {
   return (
     <div className={s.mobileMenuWrapper}>
-      <button className={s.mobileMenuCloseBtn} onClick={toggleMenu}>
+      <button
+        className={s.mobileMenuCloseBtn}
+        onClick={toggleMenu}
+        aria-label="Закрити мобільне меню"
+      >
         <IoIosClose size={30} color="#ffffff" />
       </button>
       <ul className={s.mobileMenuNavList}>

@@ -36,14 +36,21 @@ export default function Header() {
       <header className={s.header}>
         <Container className={`${style.flexWrapper} ${s.headerContainer}`}>
           <nav className={`${style.flexWrapper} ${s.navWrapper}`}>
-            <a className={`${orbitron.className} ${s.logo}`} href="#">
+            <a
+              className={`${orbitron.className} ${s.logo}`}
+              href="#"
+              aria-label="Посилання на головну сторінку сайта"
+            >
               <span className={style.accentColor}>Y</span>our
               <span className={style.accentColor}>M</span>aster
             </a>
-            <button className={s.navMenu} onClick={toggleMenu}>
+            <button
+              className={s.navMenu}
+              onClick={toggleMenu}
+              aria-label="Відкрити меню навігації"
+            >
               Меню
             </button>
-            {/* <NavMenu isOpen={isOpen} toggleMenu={toggleMenu} /> */}
             <ul className={`${s.navList} ${isOpen && s.isOpen}`}>
               <li>
                 <a
@@ -79,7 +86,11 @@ export default function Header() {
               </li>
             </ul>
           </nav>
-          <button className={s.headerBurgerMenu} onClick={toggleMobileMenu}>
+          <button
+            className={s.headerBurgerMenu}
+            onClick={toggleMobileMenu}
+            aria-label="Відкрити мобільне меню"
+          >
             <BiMenuAltRight size={20} />
           </button>
           <div className={s.headerSocWrap}>
@@ -87,13 +98,7 @@ export default function Header() {
           </div>
         </Container>
       </header>
-      {isMobileMenuOpen && (
-        <MobileMenu
-          // isOpen={isOpen}
-          // toggleMenu={toggleMenu}
-          toggleMenu={toggleMobileMenu}
-        />
-      )}
+      {isMobileMenuOpen && <MobileMenu toggleMenu={toggleMobileMenu} />}
     </>
   );
 }

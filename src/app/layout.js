@@ -15,7 +15,7 @@ export const viewport = {
 
 export const metadata = {
   metadataBase: new URL('https://your-master.org'),
-  title: 'Your Master',
+  title: 'Your Master - майстри на всі руки',
   description:
     'Наші фахівці допоможуть з будь-яким завданням: від встановлення полички до ремонтих робіт на подвірʼї чи вдома.',
   openGraph: {

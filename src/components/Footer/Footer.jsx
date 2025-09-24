@@ -8,12 +8,17 @@ const orbitron = Orbitron({
   subsets: ['latin'],
   weight: '700',
 });
+
 export default function Footer() {
   return (
     <footer className={`${st.section} ${s.footerSection}`}>
       <Container>
         <div className={s.footerFirst}>
-          <a className={`${orbitron.className} ${s.footerLogo}`} href="#">
+          <a
+            className={`${orbitron.className} ${s.footerLogo}`}
+            href="#"
+            aria-label="Посилання на головну сторінку сайта"
+          >
             <span className={st.accentColor}>Y</span>our
             <span className={st.accentColor}>M</span>aster
           </a>

@@ -16,7 +16,7 @@ export default function Support() {
           </p>
           <p className={s.supDescr}>
             Якщо у вас є питання стосовно наших послуг, звʼяжіться з нами або
-            залиште зайвку, і ми вам зателефонуємо в найближчій час!
+            залиште заявку, і ми вам зателефонуємо в найближчій час!
           </p>
           <ul className={s.supContactsList}>
             <li>
@@ -24,6 +24,7 @@ export default function Support() {
                 href="tel:0689585480"
                 target="_blank"
                 className={s.supContacts}
+                aria-label="Натисніть щоб зателефонувати по номеру"
               >
                 <MdOutlinePhone
                   color="#e74c3c"
@@ -38,6 +39,7 @@ export default function Support() {
                 href="mailto:cantiyagos@gmail.com"
                 target="_blank"
                 className={s.supContacts}
+                aria-label="Натисніть щоб написати на пошту"
               >
                 <MdMailOutline
                   color="#e74c3c"

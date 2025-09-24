@@ -45,7 +45,8 @@ export default function Benefits() {
             />
             <h3 className={s.benefitsSubtitle}>Прозоре ціноутворення</h3>
             <p className={s.benefitsDescr}>
-              Без прихованих платежів — узгоджуємо вартість до початку робіт.
+              Без прихованих платежів — узгоджуємо вартість до початку робіт і
+              не завищуємо ціни.
             </p>
           </li>
           <li className={s.benefitsItem}>
