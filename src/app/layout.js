@@ -18,6 +18,9 @@ export const metadata = {
   title: 'Your Master - майстри на всі руки',
   description:
     'Наші фахівці допоможуть з будь-яким завданням: від встановлення полички до ремонтих робіт на подвірʼї чи вдома.',
+  alternates: {
+    canonical: 'https://your-master.org',
+  },
   openGraph: {
     title: 'Your Master',
     description:
